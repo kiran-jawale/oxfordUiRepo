@@ -1,66 +1,98 @@
-html,body{
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
+
+html,body{
+  padding: 0;
   height: 100%;
   width: 100%;
+  margin: 0;
+  background-color: rgb(0, 2, 3);
 }
 body{
   overflow-x: hidden;
 }
 
-/*navbar*/
-#main{
+
+/*navbar*/  #main{
+    max-height: 110px;
+    width: 100%;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+    z-index: 51;
+    background-color: rgba(0, 0, 0, 0.534);
+  }
+  #nav{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4px;
+    height: 100px;
+  }
+  #nav h2 a img{
+    height: 80px;
+    margin: 0;
+    object-fit: cover;
+    padding: 0;
+  }
+  #nav i{
+  color: whitesmoke;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  #full{
+  z-index: 71;
   height: 100%;
-  width: 100%;
-
-background-size: cover;
-background-position: center;
-}
-#nav{
-  display:flex ;
-  align-items: center;justify-content: space-between;
-  padding: 40px 40px;
-}
-#nav i{
-
-  font-size: 30px;
-  font-weight: 800;
+  width: 30%;
+  position: absolute;
+  background-color: #ffffff70;
+  top: 0;
+  right: -50%;
+  backdrop-filter: blur(10px);
+  padding: 20px 60px;
+  }
+   
+  #full h4{
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  }
+  
+  #full i{
+  
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 27px;
   cursor: pointer;
-}
-#full{
-
-height: 100%;
-width: 30%;
-position: absolute;
-background-color: #ede9e970;
-top: 0;
-right: -50%;
-backdrop-filter: blur(10px);
-padding: 20px 60px;
-}
- 
-#full h4{
-font-size: 50px;
-font-weight: 500;
-margin-bottom: 5px;
-padding-left: 20px;
-}
-
-#full i{
-
-position: absolute;
-top: 7%;
-right: 10%;
-border-color: #fff;
-border-radius: 50%;
-padding: 5px;
-font-weight: 600;
-font-size: 27px;
-cursor: pointer;
-}
+  }
 /* navbar end*/
 /* image slider*/
 
+#image-container{
+  height: 88vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#slider{
+  height: 90%;
+  background-color: black;
+  width: 90%;
 
+}
 
 
 /* image slider End*/
