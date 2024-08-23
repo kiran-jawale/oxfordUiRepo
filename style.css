@@ -159,6 +159,81 @@ cursor: pointer;
 
 /* 3d image up to down End */
 /* company number*/
+.metrics-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  background-color: #fafafa; /* Light gray background */
+  text-align: center;
+}
+
+.metrics-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #111; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.metrics-subtitle {
+  font-size: 1.1rem;
+  color: #111; /* Medium gray for subtitle */
+  margin-bottom: 40px;
+ 
+  text-wrap: wrap;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.metrics-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.metrics-stat-item {
+  display: flex;
+  min-height: 140px;
+  min-width: 190px;
+  flex-direction: column;
+  align-items: center; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 5px 12px 15px rgba(0, 0, 0, 0.2), inset 5px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.metrics-stat-number {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #028fbe; /* Blue color for numbers */
+}
+
+.metrics-stat-description {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.metrics-link {
+  font-size: 1.1rem;
+  color: #028fbe; /* Blue color for link */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.metrics-link:hover {
+  text-decoration: underline;
+}
+
 
 
 
