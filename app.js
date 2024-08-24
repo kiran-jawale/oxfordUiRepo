@@ -1,7 +1,7 @@
   
  
  //navbar//
- var menu = document.querySelector("#nav #menubtn")
+ var menu = document.querySelector("#menubtn")
  var cross = document.querySelector("#full i")
 
  var tl = gsap.timeline();
