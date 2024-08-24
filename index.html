@@ -7,7 +7,7 @@
 
     <title>Oxford</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
 <link rel="shortcut icon" href="image/logo/blackicon.ico" type="image/x-icon">
 
@@ -31,20 +31,26 @@
 
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
+
+          
 </head>
 <body>
    <!--navbar1--> 
-   <div id="main">
-    <div id="nav">
-
-        <h2><a href=""><img src="image/logo/Oxford Electronics Logo-01.png" alt="" style="width: 200px;"> </a></h2>
-         <div style="color: #fff;"><li>qwe</li>
-        <li>qwe</li>
-        <li>qwe</li>
-        <li>qwe</li>
-        <li>qw</li></div>
-        <i class="ri-menu-3-line"></i>
+<div id="main">
+    <div id="company-logo">
+      <a href=""><img src="image/logo/Oxford Electronics Logo-01.png" alt="" style="width: 200px;"> </a>
     </div>
+  <div id="nav">
+     <div id="navlinks">
+        <a href="#" >qwe</a>
+        <a  href="#">qwe</a>
+        <a href="#" >qwe</a>
+        <a href="#" >qwe</a>
+        <a href="#" >qw</a>
+     </div>
+     <div id="menubtn"><i class="ri-menu-3-line"></i></div>
+  </div>   
+</div>
 
 </div>
 <div id="full">
@@ -59,34 +65,16 @@
    <!--navbar1 End--> 
   <div id="image-container">
       <div id="slider">
-        <div id="image-container">
-          <div id="slider">
-     <div id="captioned-gallery">
-      <figure class="slider">
-        <figure>
-          <img src="image/ImageSlider/1.jpg" alt>
-          
-        </figure>
-        <figure>
-          <img src="image/ImageSlider/2.jpg" alt>
-          
-        </figure>
-        <figure>
-          <img src="image/ImageSlider/3.jpg" alt>
-          
-        </figure>
-        <figure>
-          <img src="image/ImageSlider/4.jpg" alt>
-          
-        </figure>
-        <figure>
-          <img src="image/ImageSlider/5.jpg" alt>
-          
-        </figure>
-      </figure>
-    </div>
-            </div>
+        <div class="embla">
+          <div class="embla__container">
+            <div class="embla__slide"><img src="./image//ImageSlider/1.jpg" ></div>
+            <div class="embla__slide"><img src="./image//ImageSlider/2.jpg" ></div>
+            <div class="embla__slide"><img src="./image//ImageSlider/3.jpg" ></div>
+            <div class="embla__slide"><img src="./image//ImageSlider/4.jpg" ></div>
+            <div class="embla__slide"><img src="./image//ImageSlider/5.jpg" ></div>
           </div>
+        </div>
+        
       </div>
       </div>
   </div>
@@ -439,7 +427,11 @@
 
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+   
  
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

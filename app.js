@@ -1,7 +1,7 @@
- 
+  
  
  //navbar//
- var menu = document.querySelector("#nav i")
+ var menu = document.querySelector("#nav #menubtn")
  var cross = document.querySelector("#full i")
 
  var tl = gsap.timeline();
@@ -32,7 +32,7 @@
    tl.reverse();
  });
  //navbar End//
- //image slider// 
+ //3d squares// 
  var swiper = new Swiper(".mySwiper", {
    effect: "coverflow",
    grabCursor: true,
@@ -62,7 +62,16 @@
      prevEl: ".swiper-button-prev",
    }
  });
- // 3d image slider left to right End // 
+//squares end
+
+
+ // 3d image slider left to right   banners// 
+ const emblaNode = document.querySelector('.embla')
+  const options = { loop: false }
+  const plugins = [EmblaCarouselAutoplay()]
+  const emblaApi = EmblaCarousel(emblaNode, options, plugins)
+//banners end
+
  // 3d image slider up to down // 
 
 
