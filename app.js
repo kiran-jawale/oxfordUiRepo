@@ -1,6 +1,31 @@
   
  
+ //nav sidebar//
+var menu = document.querySelector("#navMenu Channel Partners ")
+var cross = document.querySelector("#Channelpartner i ")
+
+//var 21 = gsap.timeline()
+
+
+//21.from("#Channelpartner i",{
+//})
+
+//tl.pause()
+
+//Channelpartner.addEventListener("click",function() {
+ // tl.play()
+  
+//})
+//cross.addEventListener("click",function(){
+//tl.reverse()
+//})
+
+
+ //nav sidebar end//
+
+
  //navbar//
+ 
  const toggleButton = document.getElementById('navToggle');
  const navMenu = document.getElementById('navMenu');
 
