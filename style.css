@@ -114,6 +114,23 @@
     width: 80%;
   }
 }
+ /* navside bar*/
+
+#Channelpartner{
+height: 100%;
+width: 20%;
+position: fixed;
+background-color: white;
+z-index: 1;
+top: 0;
+left: 0;
+}
+
+
+ /* navside bar end*/
+
+
+
  /* navbar end*/
  /* image slider*/
  
@@ -733,3 +750,24 @@ color: #878787;
  
  
  /* Footer End*/
+
+
+ /* responsive navbar*/
+
+ <style>
+    @media (max-width: 768px) {
+        .navigation-panel {
+            width: 100%;
+            max-width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+</style>
+
+ /* responsive navbar end*/
+
+ 
+
+
+
