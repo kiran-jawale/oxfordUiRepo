@@ -126,3 +126,30 @@ $('.testimonials-container').owlCarousel({
 
 
  //footer End//
+ const metricsStatNumbers = document.querySelectorAll('.metrics-stat-number');
+ const metricsStats = document.querySelector('.metrics-stats');
+ 
+ metricsStatNumbers.forEach((statNumber) => {
+   const num = parseInt(statNumber.getAttribute('data-num'), 10);
+ 
+   gsap.fromTo(statNumber, 
+     { textContent: '0' }, 
+     {
+       textContent: num,
+       duration: 2,
+       ease: 'power2.inOut',
+       scrollTrigger: {
+         trigger: metricsStats,
+         start: '90% 90%',
+         end: '60% 60%',
+         toggleActions: 'play none none none',
+         markers: true,
+         scrub: 2,
+       },
+       onUpdate: function() {
+         statNumber.textContent = Math.floor(statNumber.textContent);
+       }
+     }
+   );
+ });
+ 
