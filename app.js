@@ -1,35 +1,11 @@
   
  
  //navbar//
- var menu = document.querySelector("#menubtn")
- var cross = document.querySelector("#full i")
+ const toggleButton = document.getElementById('navToggle');
+ const navMenu = document.getElementById('navMenu');
 
- var tl = gsap.timeline();
-
- tl.to("#full", {
-   right: 0,
-   duration: 0.2,
- });
- 
- tl.from("#full h4", {
-   x: 150,
-   duration: 0.3,
-   stagger: 0.2,
-   opacity: 0,
- });
- 
- tl.from("#full i", {
-   opacity: 0,
-   duration: 0.1,
- });
- 
- tl.pause();
- 
- menu.addEventListener("click", function () {
-   tl.play();
- });
- cross.addEventListener("click", function () {
-   tl.reverse();
+ toggleButton.addEventListener('click', () => {
+     navMenu.classList.toggle('active');
  });
  //navbar End//
  //3d squares// 

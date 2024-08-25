@@ -38,34 +38,22 @@
 
 <body>
   <!--navbar1-->
-  <div id="main">
-    <div id="company-logo">
-      <a href=""><img src="image/logo/Oxford Electronics Logo-01.png" alt="" style="width: 200px;"> </a>
+  <nav class="nav-container">
+    <div class="nav-logo">
+        <img src="image/logo/Oxford Electronics Logo-01.png" alt="Logo"> <!-- Placeholder for logo image -->
     </div>
-    <div id="nav">
-      <div id="navlinks">
-        <a href="#">qwe</a>
-        <a href="#">qwe</a>
-        <a href="#">qwe</a>
-        <a href="#">qwe</a>
-        <a href="#">qw</a>
-      </div>
+    <div class="nav-toggle" id="navToggle">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-
-    <div id="menubtn"><i class="ri-menu-3-line"></i></div>
-
-  </div>
-
-  </div>
-  <div id="full">
-    <i class="ri-close-circle-line"></i>
-    <h4><a href="anchor.html">About us</a></h4>
-    <h4>Support</h4>
-    <h4>Channel partners</h4>
-    <h4>Get a quote</h4>
-
-  </div>
-
+    <div class="nav-menu" id="navMenu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+</nav>
   <!--navbar1 End-->
   <div id="image-container">
     <div id="slider">
@@ -358,82 +346,165 @@
 
   <!--testmonial End-->
   <!--Footer-->
-  <div style="overflow-x: hidden;">
-    <footer id="footer" class="footer-wrapper">
-      <div class="footer-container">
-
-
-        <div class="footer-column">
-          <img src="image/logo/Oxford Electronics Logo-01.png" alt="" style="width: 200px; margin-left: 60px;">
-          <h3 class="footer-title">Customer Care</h3>
-          <p><a href="#" class="footer-link">Contact</a></p>
-          <p><a href="#" class="footer-link">Warranty</a></p>
-          <p><a href="#" class="footer-link">Care & Maintenance</a></p>
-          <p><a href="#" class="footer-link">Order our Finishes</a></p>
-          <p><a href="#" class="footer-link">FAQ's</a></p>
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-xl-9">
+                <div class="mb-5">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-6 col-xl-5">
+                            <div class="footer-item">
+                                <a href="index.html" class="p-0">
+                                    <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
+                                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                                </a>
+                                <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <div class="footer-btn d-flex">
+                                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">Useful Links</h4>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <div class="footer-item">
+                                <h4 class="mb-4 text-white">Instagram</h4>
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-4">
+                                        <div class="footer-instagram rounded">
+                                            <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
+                                            <div class="footer-search-icon">
+                                                <a href="img/instagram-footer-6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="row g-4">
+                                <div class="col-lg-6 col-xl-4">
+                                    <div class="d-flex">
+                                        <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white">Address</h4>
+                                            <p class="mb-0">123 Street New York.USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-4">
+                                    <div class="d-flex">
+                                        <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                            <i class="fas fa-envelope fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white">Mail Us</h4>
+                                            <p class="mb-0">info@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-4">
+                                    <div class="d-flex">
+                                        <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                            <i class="fa fa-phone-alt fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-white">Telephone</h4>
+                                            <p class="mb-0">(+012) 3456 7890</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-3">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="position-relative rounded-pill mb-4">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                    </div>
+                    <div class="d-flex flex-shrink-0">
+                        <div class="footer-btn">
+                            <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                                <i class="fa fa-phone-alt fa-2x"></i>
+                                <div class="position-absolute" style="top: 2px; right: 12px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column ms-3 flex-shrink-0">
+                            <span>Call to Our Experts</span>
+                            <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="footer-column">
-          <h3 class="footer-title">Find Us</h3>
-          <p class="footer-text">Manufacturing and Head Office</p>
-          <p class="footer-text">126-128 Freight Drive</p>
-          <p class="footer-text">Somerton VIC 3062</p>
-          <p class="footer-text">(Not open to the public)</p>
-          <p class="footer-text">Somerton VIC 3062, Australia</p>
-          <p class="footer-text"><a href="#" class="footer-link">View Map &rarr;</a></p>
-          <p class="footer-text"><a href="mailto:info@sussextaps.com.au" class="footer-link">info@sussextaps.com.au</a>
-          </p>
-          <p class="footer-text">(03) 9308 6599</p>
-        </div>
-
-        <div class="footer-column">
-          <h3 class="footer-title">Inside Sussex</h3>
-          <p><a href="#" class="footer-link">Our Purpose</a></p>
-          <p><a href="#" class="footer-link">Taking Responsibility</a></p>
-          <p><a href="#" class="footer-link">Art of Manufacturing</a></p>
-          <p><a href="#" class="footer-link">Heritage and People</a></p>
-          <p><a href="#" class="footer-link">CPD Presentation</a></p>
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="ri-facebook-box-line"></i></a>
-            <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
-            <a href="#" class="social-icon"><i class="ri-youtube-line"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon"><i class="ri-linkedin-box-fill"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-column">
-          <h3 class="footer-title">Be part of OXFORD Electronics</h3>
-          <p class="footer-text">Keep up to date with exclusive projects, collection releases, and our
-            commitment to sustainability</p>
-          <form class="footer-form">
-            <input type="text" placeholder="Your Name" class="footer-input">
-            <input type="email" placeholder="Email Address" class="footer-input">
-            <select class="footer-select">
-              <option value="">I am a</option>
-              <option value="Architect">Reseller</option>
-              <option value="Designer">Wholeseller</option>
-              <option value="Other">Other</option>
-            </select>
-            <button type="submit" class="footer-button">Subscribe &rarr;</button>
-          </form>
-
-        </div>
-      </div>
-  </div>
-
-  <div class="certification-wrapper">
-    <div class="certification-item">
-      <img src=" " alt="" class="certification-img">
-      <p class="footer-text">Test Line 1</p>
     </div>
-    <div class="certification-item">
-      <img src="" alt="" class="certification-img">
-      <p class="footer-text">Test Line 2</p>
-    </div>
-  </div>
-
-  </footer>
+</div>
 
 
   <!--Footer End-->
