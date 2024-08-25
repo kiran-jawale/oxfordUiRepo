@@ -54,7 +54,7 @@
 
    var tl = gsap.timeline({scrollTrigger:{
     trigger:"#updown",
-     markers:true,
+   //  markers:true,
     start:"38% 50%",
     end:"100% 50%",
     scrub:2,
@@ -143,9 +143,8 @@ $('.testimonials-container').owlCarousel({
          start: '10% 95%',
          end: '10% 90%',
          toggleActions: 'play play none none',
-         markers: true,
-         scrub: 2,
-       },
+       //  markers: true,
+        },
        onUpdate: function() {
          statNumber.textContent = Math.floor(statNumber.textContent);
        }
