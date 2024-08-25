@@ -136,13 +136,13 @@ $('.testimonials-container').owlCarousel({
      { textContent: '0' }, 
      {
        textContent: num,
-       duration: 2,
+       duration: 1,
        ease: 'power2.inOut',
        scrollTrigger: {
          trigger: metricsStats,
-         start: '90% 90%',
-         end: '60% 60%',
-         toggleActions: 'play none none none',
+         start: '10% 95%',
+         end: '10% 90%',
+         toggleActions: 'play play none none',
          markers: true,
          scrub: 2,
        },
