@@ -14,6 +14,7 @@
  }
  body{
    overflow-x: hidden;
+   padding-top: 8vh;
   }
  
  
@@ -24,7 +25,10 @@
   align-items: center;
   background-color: #000; /* Black background */
   padding: 10px 20px;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
+  top:0;
+  z-index: 171;
   height: 8vh;
 }
 .nav-logo{
@@ -765,7 +769,7 @@ color: #878787;
 
  /* responsive navbar*/
 
- <style>
+  
     @media (max-width: 768px) {
         .navigation-panel {
             width: 100%;
@@ -774,8 +778,7 @@ color: #878787;
             border-bottom: 1px solid #e0e0e0;
         }
     }
-</style>
-
+ 
  /* responsive navbar end*/
 
  

@@ -1,23 +1,23 @@
   
  
  //nav sidebar//
-var menu = document.querySelector("#navMenu Channel Partners ")
+var menu = document.querySelector(" #ChannelPartners")
 var cross = document.querySelector("#Channelpartner i ")
 
-//var 21 = gsap.timeline()
+//var t3 = gsap.timeline()
 
 
-//21.from("#Channelpartner i",{
+//t3.from("#Channelpartner i",{
 //})
 
-//tl.pause()
+//t3.pause()
 
 //Channelpartner.addEventListener("click",function() {
- // tl.play()
+ // t3.play()
   
 //})
 //cross.addEventListener("click",function(){
-//tl.reverse()
+//t3.reverse()
 //})
 
 
