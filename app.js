@@ -5,11 +5,12 @@ var channelPartnerClose = document.querySelector("#close-ch-partner");
 var time = gsap.timeline();
 
 time.to("#ChannelPartner",{
-    left:0,
+    right: 2,
     duration:0.2
 });
+ 
 time.from("#ChannelPartner #ul li",{
-    x:150,
+    x: 150,
     duration:0.1,
     stagger:0.1,
     opacity:0,
@@ -83,79 +84,91 @@ const emblaApi = EmblaCarousel(emblaNode, options, plugins);
 //banners end
 
 // 3d image slider up to down //
+// ...
+
+// 3d image slider up to down //
 
 /** image slider up to down  */
 
-var tl = gsap.timeline({
+
+var tl = gsap.timeline({scrollTrigger:{
+  trigger:"#updown",
+  // markers:true,
+  start:"38% 50%",
+  end:"100% 50%",
+  scrub:2,
+  pin:true
+}});
+
+
+tl
+.to(".text",{
+  top: "-7%",
+},'a')
+.to("#card-one",{
+  top: "35%",
+},'a')
+.to("#card-two",{
+  top: "130%"
+},'a')
+.to("#card-two",{
+  top: "42%"
+},'b')
+.to("#card-one",{
+  width: "65%",
+  height: "65vh"
+},'b')
+.to("#card-three",{
+  top: "130%"
+}, 'b')
+.to("#card-three",{
+  top: "50%"
+}, 'c')
+.to("#card-two",{
+  width: "70%",
+  height: "70vh"
+},'c')
+ // Existing GSAP animation for desktop screens
+
+// New GSAP animation for mobile screens
+// Existing GSAP animation for desktop screens
+// New GSAP animation for mobile screens
+var tlSmall = gsap.timeline({
   scrollTrigger: {
-    trigger: "#updown",
-    //  markers:true,
-    start: "38% 50%",
-    end: "100% 50%",
-    scrub: 2,
-    pin: true,
+    trigger: "#updown-small",
+    start: "30% 80% ",
+    end: "55% 95%",
+   
+    //markers:true,
+    scrub:1,
   },
 });
 
-tl.to(
-  ".text",
+tlSmall.from(
+  "#card-one-small",
   {
-    top: "-7%",
+    x: -100,
+    opacity: 0,
   },
   "a"
 )
-  .to(
-    "#card-one",
+  .from(
+    "#card-two-small",
     {
-      top: "35%",
+      x: 100,
+      opacity: 0,
     },
     "a"
   )
-  .to(
-    "#card-two",
+  .from(
+    "#card-three-small",
     {
-      top: "130%",
+      y: 100,
+      opacity: 0,
     },
     "a"
-  )
-  .to(
-    "#card-two",
-    {
-      top: "42%",
-    },
-    "b"
-  )
-  .to(
-    "#card-one",
-    {
-      width: "65%",
-      height: "65vh",
-    },
-    "b"
-  )
-  .to(
-    "#card-three",
-    {
-      top: "130%",
-    },
-    "b"
-  )
-  .to(
-    "#card-three",
-    {
-      top: "50%",
-    },
-    "c"
-  )
-  .to(
-    "#card-two",
-    {
-      width: "70%",
-      height: "70vh",
-    },
-    "c"
   );
-
+// ...
 // 3d image slider up to down end //
 // Company numbers  //
 

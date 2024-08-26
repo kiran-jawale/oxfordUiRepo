@@ -51,7 +51,7 @@
     </div>
     <div style="animation-duration: 500ms;" class="nav-menu" id="navMenu">
       <a href="about.html" class="nav-link">About US</a>
-      <a  id="channel-partner-id" class="nav-link">Channel Partners</a>
+      <a id="channel-partner-id" class="nav-link">Channel Partners</a>
       <a href="#" class="nav-link">get a Quote</a>
       <a href="#" class="nav-link">Contact</a>
     </div>
@@ -73,8 +73,8 @@
         <li><a href="#">Rg lite</a></li>
       </ul>
     </div>
-</div>
-  
+  </div>
+
   <!--image slider-->
   <div id="image-container">
     <div id="slider">
@@ -131,8 +131,20 @@
     <div class="cards" id="card-two"></div>
     <div class="cards" id="card-three"></div>
   </div>
-
-
+  <!-- For mobile screens -->
+  <div id="updown-small" class="mobile-only">
+    <div class="updowntext-small">
+      <h1>HTML CSS JAVASCRIPT REACT NODE EXPRESS MONGODB NEXTJS</h1>
+      <p>I hope this project finish today or tommarow , I like working on Frontend with Minimal Design and animations.
+      </p>
+      <div class="updown-img-small"><img src="./image/logo/Oxford Electronics Logo-01.png" alt=""></div>
+    </div>
+    <div class="cards-container-small">
+      <div class="cards-small" id="card-one-small" style="background-image: url('./image/up1.jpg');"></div>
+      <div class="cards-small" id="card-two-small" style="background-image: url('./image/up2.jpg');"></div>
+      <div class="cards-small" id="card-three-small" style="background-image: url('./image/up3.jpg');"></div>
+    </div>
+  </div>
   <!--3d image slider up to down End   -->
   <!--Company number-->
   <div class="metrics-container">
@@ -367,27 +379,28 @@
   <!--Footer-->
   <footer
     style="background-color: #000000; color: white; padding: 30px 0; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; text-align: center;">
-    <div style="flex: 1 1 200px; padding: 10px;">
-      <img src="image/logo/Oxford Electronics Logo-01.png" alt="Animal Shelter Logo"
+    <div id="some" style="flex: 1 1 200px; padding: 10px;">
+      <img id="footer-logo" src="image/logo/Oxford Electronics Logo-01.png" alt="Animal Shelter Logo"
         style="width: 250px; border-radius: 50%;">
       <p style="margin: 10px 0; font-size: 14px;"></p>
-      <div style="margin-top: 15px;">
-        <a href="#"
-          style="display: inline-block; margin: 0 10px; font-size: 40px; color: white; text-decoration: none;"><i
-            class="ri-facebook-circle-fill"></i></a>
-        <a href="#"
-          style="display: inline-block; margin: 0 10px; font-size: 40px; color: white; text-decoration: none;"><i
-            class="ri-instagram-line"></i></a>
-        <a href="#"
-          style="display: inline-block; margin: 0 10px; font-size: 40px; color: white; text-decoration: none;"><i
-            class="ri-youtube-line"></i></a>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="ri-youtube-line"></i>
+        </a>
       </div>
     </div>
     <div style="flex: 1 1 200px; padding: 10px;">
       <h3 style="margin: 15px 0 10px; font-size: 18px;">Our Products</h3>
-      <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">switch , socket + Accessories</a>
+      <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">switch , socket +
+        Accessories</a>
       <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">Multistrand wires</a>
-      <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">Switchgear</a>  
+      <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">Switchgear</a>
       <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">LED lighting range</a>
       <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">moudler box</a>
       <a href="#" style="color: white; text-decoration: none; display: block; margin: 5px 0;">Armoured cable</a>
@@ -404,12 +417,13 @@
     </div>
     <div style="flex: 1 1 200px; padding: 10px;">
       <h3 style="margin: 15px 0 10px; font-size: 18px;">CONTACT</h3>
-      <p style="margin: 10px 0; font-size: 14px;"><i class="fa fa-map-marker"></i> E-143, Phase, 1, opp. Pani Ki Tanki, Transport Nagar, Lucknow, Uttar Pradesh 226012</p>
+      <p style="margin: 10px 0; font-size: 14px;"><i class="fa fa-map-marker"></i> E-143, Phase, 1, opp. Pani Ki Tanki,
+        Transport Nagar, Lucknow, Uttar Pradesh 226012</p>
       <p style="margin: 10px 0; font-size: 14px;"><i class="fa fa-phone"></i> +91 12345 67899</p>
       <p style="margin: 10px 0; font-size: 14px;"><i class="fa fa-envelope"></i> info@oxfordelectronics.com</p>
     </div>
-    <div style="flex: 1 1 100%; padding: 10px; font-size: 12px; color: #ccc; margin-top: 20px;">
-      &copy; 2020 Copyright: 
+    <div id="copyright" style="text-align: center;  font-size: 12px; color: #ffffff;  ">
+      &copy; 2020 Copyright:
     </div>
   </footer>
   <!--Footer End-->

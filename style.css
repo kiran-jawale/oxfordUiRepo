@@ -14,7 +14,7 @@
  }
  body{
    overflow-x: hidden;
-   padding-top: 8vh;
+   padding-top: 10vh;
   }
  
  
@@ -43,6 +43,7 @@
   width: 70%;
   height: 70%;
   object-fit: cover;
+  transition: 0.3s;
 }
 
 
@@ -68,6 +69,39 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+#navMenu a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+  position: relative;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+#navMenu a:hover{
+  font-size: 1.3rem;
+}
+.nav-logo img:hover{
+  scale: 1.1;
+}
+#navMenu a:hover::after{
+  width: 100%;
+
+}
+
+#navMenu a::after{
+  content: "";
+  position: absolute;
+  background-color: #0097e8;
+  height: 3px;
+  width: 0;
+  transition: 0.3s;
+  left: 0;
+  bottom: -10px;
+}
+
 
 .nav-toggle {
   display: none;
@@ -125,9 +159,11 @@
   width: 66vh;
   position: fixed;
   top: 12vh;
-  background: linear-gradient(to bottom, rgba(146, 217, 255, 0.8), rgba(255, 255, 255, 0.8));
+  backdrop-filter: blur(6px);
+  background: linear-gradient(to bottom, rgba(0, 43, 66, 0.9), rgba(0, 102, 176, 0.9));
   z-index: 31;
-  left: -100%;
+  color: whitesmoke;
+  right: -200%;
   border-radius: 10px;
 }
 
@@ -135,48 +171,72 @@
   position: absolute;
   top: 5%;
   left: 85%;
-  border-radius: 50%;
+  color: whitesmoke;
+   border-radius: 50%;
   padding: 5px;
   font-weight: 600;
   font-size: 1.5rem;
-  cursor: pointer;
+  cursor: pointer; 
+  transition: 0.2s;
+ }
+
+#ChannelPartner:hover{
+  background: linear-gradient(to bottom, rgba(0, 31, 56, 0.9), rgba(0, 27, 50, 0.9));
+
 }
 
+#close-ch-partner:hover{
+  scale: 1.3;
+  color: #65c2f4;
+}
+
+#ul li:hover {
+  animation-duration: 200ms;
+  scale: 1.5;
+  background: linear-gradient(to right, rgba(0, 103, 158, 0.9), rgba(90, 183, 216, 0.4));;
+}
+#ul li a:hover{
+  translate: 10%;
+  scale: 1.2;
+}
 #channel-partner-content {
-  width: 100%;
-  max-width: 250px;
-  padding: 20px;
+  width: 90%;
+   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  }
 
 #channel-partner-content #h3 {
   margin-top: 0;
   width: 100%;
   font-size: 1.2rem;
-  color: #000;
-  font-weight: 700;
+   font-weight: 700;
 }
 
 #ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   margin: 0;
+  width: 100%;
 }
 
 #ul li {
   margin-bottom: 15px;
+  text-align: left;
+  border-radius: 10px;
 }
 
 #ul li a {
   text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  display: block;
+  color: whitesmoke;
+   display: block;
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  transition: 0.3s;
 }
 
 
@@ -244,12 +304,17 @@
   @media screen and (max-width: 600px) {
       #image-container{
         width: 100%;
-        height: 29.5vh;
+        height: 25vh;
       }
       .embla__slide img{
         width: 98%;
         height: 100%;
         margin-left:4px ;
+      }
+      .embla__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
   }
  
@@ -287,15 +352,20 @@
     margin: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5) ;
     box-shadow: 0 -15px 30px rgba(0,0,0, 0.8);
- }
+   }
  
  .swiper-slide img {
    display: block;
    width: 100%;
    height: 100%;
    object-fit: cover;
+
  }
  
+ .swiper-slide:hover{
+scale: 1.02 
+}
+
  .swiper-button-next::after,
  .swiper-button-prev::after{
    display: none;
@@ -332,6 +402,7 @@
  @media screen and (max-width: 400px) {
    .swiper-slide {
      width: 60%;
+      
    }
    .swiper-button-next i,
    .swiper-button-prev i{
@@ -341,9 +412,8 @@
  
  @media screen and (max-width: 500px) { 
   #squares{
-    height: 40vh;
-    box-shadow: inset 0 15px 10px rgba(223, 220, 220, 0.2);
-   }
+    height: 35vh;
+    }
    .mySwiper {
     width: 180px;
     height: 180px;
@@ -356,26 +426,24 @@
  /* 3d image up to down*/
  
  /*3d image up to down */
- #updown{
+ #updown {
   gap: 10vh;
   align-items: center;
   justify-content: center;
   min-width: 100vw;
   min-height: 130vh;
-  background: linear-gradient(
-    to bottom, #000e15, #000000);
+  background: linear-gradient(to bottom, #000e15, #000000);
   overflow: hidden;
   position: relative;
   padding: 0px;
- }
+}
 
-
-.updowntext{
+.updowntext {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-   width: 80%;
+  width: 80%;
   height: 80vh;
   background-position: center;
   background-size: cover;
@@ -399,28 +467,40 @@
   top: 250%;
   background-image: url(./image/up3.jpg);
 }
-.updown-img{
-  width:10vw;
+
+
+/* Media query for small screen sizes */
+@media (max-width: 768px) {
+  #updown {
+    height: 300px; /* adjusted height for small screens */
+  }
+  .cards {
+    width: 60vw; /* adjusted width for small screens */
+    height: 40vh; /* adjusted height for small screens */
+  }
+}
+
+.updown-img {
+  width: 10vw;
   height: 10vw;
- 
-  background-image: url(./image/logo/Oxford\ Electronics\ Logo-01.png);
+  background-image: url('./image/logo/Oxford Electronics Logo-01.png');
   background-size: cover;
   background-position: center;
 }
 
-.updowntext h1{
+.updowntext h1 {
   font-size: 3vw;
   color: #fff;
   text-align: center;
 }
 
-.updowntext p{
+.updowntext p {
   font-size: 1vw;
   color: rgb(126, 126, 126);
   text-align: center;
 }
 
-.cards{
+.cards {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -432,7 +512,186 @@
   border-radius: 5px;
 }
 
- 
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  .updowntext {
+    width: 90%;
+    height: 60vh;
+  }
+  .cards {
+    width: 90%;
+    height: 60vh;
+  }
+  .updown-img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .updowntext h1 {
+    font-size: 4vw;
+  }
+  .updowntext p {
+    font-size: 1.5vw;
+  }
+}
+
+/* Existing styles for desktop screens */
+
+/* New styles for mobile screens */
+/* Existing styles for desktop screens */
+
+/* New styles for mobile screens */
+#updown-small {
+  height: 100vh; /* adjusted height for small screens */
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #000e15, #000000);
+  overflow: hidden; /* add this to hide the overflow */
+}
+
+.updowntext-small {
+   text-align: center;
+  margin-bottom: 20px;
+  text-wrap: wrap;
+}
+.updowntext-small p{
+  font-size: 0.8rem;
+}
+.updowntext-small h1{
+  font-size: 1.2rem;
+}
+.updowntext-small h1:hover{
+  transform: perspective(100px) rotateX(45deg) rotateY(45deg);
+}
+
+
+.updown-img-small {
+  width: 50vw;
+  height: 10vh;
+  margin: 2px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.updown-img-small img{
+  min-width: 30vw;
+  min-height: 10vh;
+  object-fit: cover;
+  transition: 0.3s;
+ }
+
+.cards-container-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cards-small {
+  width: 80vw;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+  #updown {
+    display: block; /* show on large screens */
+  }
+  #updown-small {
+    display: none; /* hide on large screens */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  #updown {
+    display: none; /* hide on mobile screens */
+  }
+  #updown-small {
+    display: block; /* show on mobile screens */
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+  .updowntext {
+    width: 95%;
+    height: 50vh;
+  }
+  .cards {
+    width: 95%;
+    height: 50vh;
+  }
+  .updown-img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .updowntext h1 {
+    font-size: 5vw;
+  }
+  .updowntext p {
+    font-size: 2vw;
+  }
+}
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  .updowntext {
+    width: 90%;
+    height: 60vh;
+  }
+  .cards {
+    width: 90%;
+    height: 60vh;
+  }
+  .updown-img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .updowntext h1 {
+    font-size: 4vw;
+  }
+  .updowntext p {
+    font-size: 1.5vw;
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+  .updowntext {
+    width: 95%;
+    height: 50vh;
+  }
+  .cards {
+    width: 95%;
+    height: 50vh;
+  }
+  .updown-img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .updowntext h1 {
+    font-size: 5vw;
+  }
+  .updowntext p {
+    font-size: 2vw;
+  }
+}
  /* 3d image up to down End */
 /* company number*/
 .metrics-container {
@@ -512,9 +771,21 @@
 
  
 @media screen and (max-width: 600px) {
-  .metrics-stat-item{
-    min-height: 40px ;
-    min-width: 60px;
+  .metrics-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .metrics-stat-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   min-width: 40% !important; /* Take full width on small screens */
+    min-height: 40%;
+   }
+  .metrics-stat-number{
+    font-size: 2.1rem;
   }
 }
  
@@ -523,7 +794,7 @@
  .testimonials-section{
    background: #000000;
    color: whitesmoke;
-   width: 100%;
+   width: 100vw;
    padding: 2px;
   }
  
@@ -822,6 +1093,83 @@ color: #878787;
  /* responsive navbar end*/
 
  
+ .social-links {
+  margin-top: 15px;
+}
 
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
 
+ 
+.social-links a:hover::before{
+  content:"Test";
+  color: white;
+}
 
+/* Media query for small screens *//* Media query for mobile devices */
+@media (max-width: 620px) {
+  /* Hide the logo image on mobile devices */
+  footer  #some #footer-logo img {
+    display: none;
+  }
+
+  footer{
+    max-height: 80vh;
+    overflow: hidden;
+  }
+
+  /* Center the footer columns */
+  footer > div {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  /* Reduce the font size and margins on mobile devices */
+  footer h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  footer p {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  footer a {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  /* Reduce the social icon size on mobile devices */
+  footer .footer-social-icon i {
+    height: 25px;
+    width: 25px;
+    line-height: 23px;
+  }
+
+  /* Adjust the margins and padding on mobile devices */
+  footer .footer-widget-heading {
+    margin-bottom: 15px;
+  }
+
+  footer .footer-widget ul li {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  footer .copyright-area {
+    padding: 10px 0;
+  }
+
+  footer .copyright-text p {
+    font-size: 8px;
+  }
+  #copyright{
+    display: inline-block;
+  }
+}
