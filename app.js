@@ -6,17 +6,17 @@ var time = gsap.timeline();
 
 time.to("#ChannelPartner",{
     left:0,
-    duration:0.3
+    duration:0.2
 });
 time.from("#ChannelPartner #ul li",{
     x:150,
-    duration:0.4,
-    stagger:0.2,
-    opacity:0
+    duration:0.1,
+    stagger:0.1,
+    opacity:0,
 });
 time.from("#close-ch-partner",{
     opacity:0,
-    duration:0.2
+    duration:0.1
 });
 time.pause();
 
@@ -29,7 +29,7 @@ channelPartnerButton.addEventListener("click",() => {
 channelPartnerClose.addEventListener("click",()=> {
   time.reverse(0.5); // Reverse the timeline with a duration of 0.3 seconds
   //if no params, then as per durations
-  menuButton.style.display = "block";
+  channelPartnerButton.style.display = "block";
 });
 
 //nav sidebar end//
