@@ -327,6 +327,7 @@ right: -40%;
     to bottom, #000e15, #000000);
   overflow: hidden;
   position: relative;
+  padding: 0px;
  }
 
 
@@ -402,7 +403,7 @@ right: -40%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 20px;
+  padding: 50px 0px;
   background-color: #222; /* Dark background */
   text-align: center;
   width: 100vw;
