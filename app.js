@@ -1,21 +1,35 @@
 //nav sidebar//
-var menu = document.querySelector("channel-partner-id");
-var cross = document.querySelector("#Channelpartner i");
+var channelPartnerButton = document.querySelector("#channel-partner-id");
+var channelPartnerClose = document.querySelector("#close-ch-partner");
 
-var t3 = gsap.timeline();
+var time = gsap.timeline();
 
-t3.from("#Channelpartner i", {
-
-  //here ur animations
-
+time.to("#ChannelPartner",{
+    left:0,
+    duration:0.3
 });
-t3.pause();
-
-Channelpartner.addEventListener("click", function () {
-  t3.play();
+time.from("#ChannelPartner #ul li",{
+    x:150,
+    duration:0.4,
+    stagger:0.2,
+    opacity:0
 });
-cross.addEventListener("click", function () {
-  t3.reverse();
+time.from("#close-ch-partner",{
+    opacity:0,
+    duration:0.2
+});
+time.pause();
+
+channelPartnerButton.addEventListener("click",() => {
+    channelPartnerButton.style.display = "none"
+    time.play();
+});
+ 
+
+channelPartnerClose.addEventListener("click",()=> {
+  time.reverse(0.5); // Reverse the timeline with a duration of 0.3 seconds
+  //if no params, then as per durations
+  menuButton.style.display = "block";
 });
 
 //nav sidebar end//

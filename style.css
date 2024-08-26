@@ -120,24 +120,63 @@
 }
  /* navside bar*/
 
-#Channelpartner{
-height: 100%;
-width: 20%;
-position: fixed;
-background-color: white;
-z-index: 3;
-top: 0;
-left: -20%;
+ #ChannelPartner{
+  height: 85vh;
+  width: 66vh;
+  position: fixed;
+  top: 12vh;
+  background: linear-gradient(to bottom, rgba(146, 217, 255, 0.8), rgba(255, 255, 255, 0.8));
+  z-index: 31;
+  left: -100%;
+  border-radius: 10px;
 }
 
-#Channelpartner1 {
-height: 100%;
-width: 40%;
-position: fixed;
-background-color: white;
-z-index: 3;
-top: 0;
-right: -40%;
+#close-ch-partner {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#channel-partner-content {
+  width: 100%;
+  max-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#channel-partner-content #h3 {
+  margin-top: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 700;
+}
+
+#ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ul li {
+  margin-bottom: 15px;
+}
+
+#ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 
