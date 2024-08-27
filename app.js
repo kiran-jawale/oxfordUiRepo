@@ -149,6 +149,7 @@ tlSmall.from(
   {
     x: -100,
     opacity: 0,
+    duration : 0.01,
   },
   "a"
 )
@@ -157,6 +158,7 @@ tlSmall.from(
     {
       x: 100,
       opacity: 0,
+      duration:0.1,
     },
     "a"
   )
@@ -165,6 +167,7 @@ tlSmall.from(
     {
       y: 100,
       opacity: 0,
+      duration: 0.1,
     },
     "a"
   );

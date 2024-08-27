@@ -418,6 +418,8 @@ scale: 1.02
     width: 180px;
     height: 180px;
     }
+  
+
  }
 
  
@@ -1171,5 +1173,14 @@ color: #878787;
   }
   #copyright{
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #copyright{
+    padding-top: 12px ;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 100%;
   }
 }
