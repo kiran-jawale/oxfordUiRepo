@@ -14,22 +14,26 @@
  }
  body{
    overflow-x: hidden;
-   padding-top: 10vh;
+   padding-top: 9vh;
   }
- 
+  @media screen and (max-width: 768px) {
+    body{
+      padding-top: 7vh ; 
+    }
+  }
  
  /*navbar*/  
  .nav-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #000; /* Black background */
+  background-color: #001; /* Black background */
   padding: 10px 20px;
   position: fixed;
   width: 100vw;
   top:0;
   z-index: 171;
-  height: 8vh;
+  height: 7vh;
 }
 .nav-logo{
   width: 20%;
@@ -40,8 +44,8 @@
 }
 
 .nav-logo img { /* Manage logo size*/
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
   transition: 0.3s;
 }
@@ -62,18 +66,40 @@
 .nav-menu {
   display: flex;
   align-items: center; /* Align links with logo */
-  justify-content: space-around;
-  width: 80%;
+  justify-content: flex-start;
+  width: 60%;
+  gap: 35px;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 500;
+}
+
+#rightbtn{
+  min-width: 10%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#rightbtn button{
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  margin-right: 2px;
+    background-color: #0091df;
+    border: 1px solid #00445b;
+    transition: 0.3s;
+}
+#rightbtn button:hover{
+  background-color: #00a6ff;
+  scale: 1.1;
 }
 
 #navMenu a{
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   letter-spacing: 0.1px;
   position: relative;
   padding: 0 10px;
@@ -81,7 +107,7 @@
 }
 
 #navMenu a:hover{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .nav-logo img:hover{
   scale: 1.1;
@@ -120,6 +146,7 @@
   .nav-container{
     display: flex;
     justify-content: space-between;
+    height: 6vh;
   }
   .nav-menu {
       display: none;
@@ -155,35 +182,35 @@
  /* navside bar*/
 
  #ChannelPartner{
-  height: 85vh;
-  width: 66vh;
+  height: 87vh;
+  width: 100vw;
   position: fixed;
-  top: 12vh;
+  top: 10vh;
   backdrop-filter: blur(6px);
-  background: linear-gradient(to bottom, rgba(0, 43, 66, 0.9), rgba(0, 102, 176, 0.9));
-  z-index: 31;
+  background: linear-gradient(to bottom, rgba(0, 28, 43, 0.9), rgba(0, 96, 165, 0.9));
+  z-index: 91;
+  overflow-x:hidden;
   color: whitesmoke;
   right: -200%;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 #close-ch-partner {
   position: absolute;
   top: 5%;
   left: 85%;
+   z-index: 81;
   color: whitesmoke;
-   border-radius: 50%;
+  border-radius: 50%;
   padding: 5px;
   font-weight: 600;
   font-size: 1.5rem;
   cursor: pointer; 
   transition: 0.2s;
  }
-
-#ChannelPartner:hover{
-  background: linear-gradient(to bottom, rgba(0, 31, 56, 0.9), rgba(0, 27, 50, 0.9));
-
-}
+ 
 
 #close-ch-partner:hover{
   scale: 1.3;
@@ -192,18 +219,18 @@
 
 #ul li:hover {
   animation-duration: 200ms;
-  scale: 1.5;
+ 
   background: linear-gradient(to right, rgba(0, 103, 158, 0.9), rgba(90, 183, 216, 0.4));;
 }
 #ul li a:hover{
-  translate: 10%;
-  scale: 1.2;
+   scale: 1.25;
 }
 #channel-partner-content {
-  width: 90%;
+  width: 50%;
    padding: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
   }
 
 #channel-partner-content #h3 {
@@ -218,15 +245,17 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   margin: 0;
   width: 100%;
+  transition: 0.3s;
 }
 
 #ul li {
   margin-bottom: 15px;
-  text-align: left;
-  border-radius: 10px;
+  text-align: center;
+  border-radius: 30px;
+  width: 90%;
 }
 
 #ul li a {
@@ -325,9 +354,10 @@
  
  #squares{
    overflow-x: hidden;
-   background-color: #0d0d0d; 
+   background-color: #0e1f2f; 
      height: 90vh; 
    width: 100vw; 
+   box-shadow: inset 0 -10px 30px black;
    position: relative; 
    display: flex; 
    justify-content: center; 
@@ -774,6 +804,8 @@ scale: 1.02
  
 @media screen and (max-width: 600px) {
   .metrics-stats {
+    padding-left: 8px;
+    padding-right: 8px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -790,13 +822,15 @@ scale: 1.02
     font-size: 2.1rem;
   }
 }
+
+
  
  /* company number End*/
  /* testmonial*/
  .testimonials-section{
    background: #000000;
    color: whitesmoke;
-   width: 100vw;
+   max-width: 100vw;
    padding: 2px;
   }
  
@@ -919,7 +953,9 @@ scale: 1.02
 
  /* testmonial End*/
  /* Footer*/
-
+footer{
+  width: 100vw;
+}
 .footer-section {
 background: #151414;
 position: relative;
@@ -1171,14 +1207,14 @@ color: #878787;
   footer .copyright-text p {
     font-size: 8px;
   }
-  #copyright{
-    display: inline-block;
-  }
+  
 }
 
 @media screen and (max-width: 600px) {
   #copyright{
     padding-top: 12px ;
+    background-color: black;
+    color: whitesmoke;
     padding-bottom: 12px;
     text-align: center;
     width: 100%;
