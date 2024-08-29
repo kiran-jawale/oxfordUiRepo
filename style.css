@@ -1200,7 +1200,7 @@ color: #878787;
 .social-links a:hover i{
   color: white;
   transition: 0.3s;
-}
+} 
 
 .social-links a::after{
   content:  '';
