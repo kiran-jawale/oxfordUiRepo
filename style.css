@@ -200,7 +200,7 @@
 #close-ch-partner {
   position: absolute;
   top: 5%;
-  left: 85%;
+  left: 75%;
    z-index: 81;
   color: whitesmoke;
   border-radius: 50%;
@@ -214,7 +214,9 @@
 
 #close-ch-partner:hover{
   scale: 1.3;
-  color: #65c2f4;
+  
+  background: rgba(0, 86, 147, 0.434);
+  
 }
 
 #ul li:hover {

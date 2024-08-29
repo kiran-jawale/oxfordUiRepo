@@ -14,11 +14,7 @@ time.from("#ChannelPartner #ul li",{
     duration:0.1,
     stagger:0.1,
     opacity:0,
-});
-time.from("#close-ch-partner",{
-    opacity:0,
-    duration:0.1
-});
+}); 
 time.pause();
 
 channelPartnerButton.addEventListener("click",() => {
