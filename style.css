@@ -200,6 +200,8 @@
   position: absolute;
   top: 5%;
   left: 75%;
+  width: 23px;
+  height: 23px;
    z-index: 81;
   color: whitesmoke;
   border-radius: 50%;
