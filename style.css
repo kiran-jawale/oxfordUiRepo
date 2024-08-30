@@ -37,7 +37,7 @@
 }
 .nav-logo{
   width: 20%;
-  height: 80%;  
+  height: 100%;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +104,10 @@
   position: relative;
   padding: 0 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-#navMenu a:hover{
-  font-size: 1.2rem;
-}
+ 
 .nav-logo img:hover{
   scale: 1.1;
 }
@@ -183,7 +182,7 @@
 
  #ChannelPartner{
   height: 87vh;
-  width: 25%;
+  width: 30%;
   position: fixed;
   top: 10vh;
   backdrop-filter: blur(6px);
@@ -194,7 +193,7 @@
   right: -200%;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 #close-ch-partner {
@@ -222,11 +221,13 @@
 #ul li:hover {
   animation-duration: 200ms;
  
-  background: linear-gradient(to right, rgba(0, 103, 158, 0.9), rgba(90, 183, 216, 0.4));;
+  background: linear-gradient(to right, rgba(0, 103, 158, 0.712), rgba(0, 169, 230, 0.7));;
 }
 #ul li a:hover{
-   scale: 1.25;
-}
+   scale: 1.2;
+   margin-left: 35px;
+   font-weight: 600;
+ }
 #channel-partner-content {
   width: 50%;
    padding: 20px;
@@ -247,7 +248,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   margin: 0;
   width: 100%;
   transition: 0.3s;
@@ -255,9 +256,10 @@
 
 #ul li {
   margin-bottom: 15px;
-  text-align: center;
-  border-radius: 30px;
-  width: 90%;
+  margin-left: 5px;
+  text-align: left;
+  border-radius: 5px;
+  width: 400px;
 }
 
 #ul li a {
