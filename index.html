@@ -38,10 +38,10 @@
 </head>
 
 <body>
-  <!--navbar1-->
+  <!--navbar1--><!-- Navbar -->
   <nav class="nav-container">
     <div class="nav-logo">
-      <img src="image/logo/Oxford Electronics Logo-01.png" alt="Logo"> <!-- Placeholder for logo image -->
+      <img src="image/logo/Oxford Electronics Logo-01.png" alt="Logo">
     </div>
     <div class="nav-toggle" id="navToggle">
       <div></div>
@@ -49,34 +49,36 @@
       <div></div>
     </div>
     <div class="nav-menu" id="navMenu">
-      <a href="about.html" class="nav-link">About US</a>
-      <a id="channel-partner-id" class="nav-link">Channel Partners</a>
-      <a href="#" class="nav-link">get a Quote</a>
-      <a href="#" class="nav-link">Contact</a>
-      <a href="#" class="nav-link">Our Products</a>
+      <a href="about.html" class="nav-link" data-target="about" data-status="redirect">About Us</a>
+      <a href="#" class="nav-link" data-target="channel-partners" data-status="sidebar">Channel Partners</a>
+      <a href="#" class="nav-link" data-target="quote" data-status="sidebar">Get a Quote</a>
+      <a href="#" class="nav-link" data-target="contact" data-status="sidebar">Contact</a>
+      <a href="#" class="nav-link" data-target="products" data-status="sidebar">Our Products</a>
     </div>
     <div id="rightbtn">
-          <button>.</button>
+      <button>.</button>
     </div>
   </nav>
-  <!--navside bar-->
-  <div id="ChannelPartner">
-    <i id="close-ch-partner" class="ri-close-fill"></i>
-    <div id="channel-partner-content">
-      <h3 id="h3">Consumer Products</h3>
-      <ul id="ul">
-        <li><a href="./anchor.html">anchor</a></li>
-        <li><a href="#">Finolex</a></li>
-        <li><a href="#">Clair</a></li>
-        <li><a href="#">Manglam</a></li>
-        <li><a href="#">Polycab</a></li>
-        <li><a href="#">Havells</a></li>
-        <li><a href="#">RR Signature</a></li>
-        <li><a href="#">Kinjal</a></li>
-        <li><a href="#">Rg lite</a></li>
-      </ul>
-    </div>
+  
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <h3>Sidebar 1</h3>
+  <i id="close-sidebar" class="ri-close-fill"></i>
+  <div id="sidebar-content">
+    <!-- sidebar content will be generated dynamically -->
   </div>
+</div>
+
+<!-- Sub-sidebar -->
+<div id="sub-sidebar">
+  <h3 style="max-width: 30%;">SUb Sidebar</h3>
+  <i id="close-sub-sidebar" class="ri-close-fill"></i>
+  <div id="sub-sidebar-content">
+    <!-- sub-sidebar content will be generated dynamically -->
+  </div>
+</div>
+
 
   <!--image slider-->
   <div id="image-container">
