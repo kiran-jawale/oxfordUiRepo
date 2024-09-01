@@ -1,5 +1,7 @@
 
 
+
+
 const linksData = {
   "about": { sidebarLinks: [] },
   "channel-partners": {
@@ -51,7 +53,35 @@ const navLinks = document.querySelectorAll(".nav-link");
 let activeNavLink = null;
 let activeSidebarLink = null;
 
-const time = gsap.timeline({ paused: true });
+function openSidebar() {
+  gsap.to(sidebarContainer, { right: 0, duration: 0.5 });
+}
+
+function closeSidebar() {
+  gsap.to(sidebarContainer, { right: -700, duration: 0.5 });
+  sidebarContent.innerHTML = ""; // Remove sidebar content
+  closeSubSidebar();
+  if (activeNavLink) {
+    activeNavLink.style.backgroundColor = "";
+    activeNavLink.style.pointerEvents = "auto";
+    activeNavLink = null;
+  }
+}
+
+function openSubSidebar() {
+  gsap.to(subSidebarContainer, { right: 1, duration: 0.5 });
+}
+
+function closeSubSidebar() {
+  gsap.to(subSidebarContainer, { right: -900, duration: 0.5 });
+  subSidebarContent.innerHTML = ""; // Remove sub-sidebar content
+  if (activeSidebarLink) {
+    activeSidebarLink.style.backgroundColor = "";
+    activeSidebarLink.style.pointerEvents = "auto";
+    activeSidebarLink = null;
+  }
+}
+
 function handleNavLinkClick(event) {
   const target = event.target;
   const dataTarget = target.getAttribute("data-target");
@@ -61,17 +91,11 @@ function handleNavLinkClick(event) {
   if (status === "redirect") return;
 
   // Close sub-sidebar if it's open
-  if (subSidebarContainer.style.right !== "-300px") {
-    gsap.to(subSidebarContainer, { right: -900, duration: 0.5 });
-    subSidebarContent.innerHTML = ""; // Remove sub-sidebar content
-    activeSidebarLink = null; // Reset active sidebar link
-  }
+  closeSubSidebar();
 
   // Close sidebar if it's already open and the same link is clicked
   if (activeNavLink && activeNavLink === target) {
-    gsap.to(sidebarContainer, { right: -300, duration: 0.5 });
-    sidebarContent.innerHTML = ""; // Remove sidebar content
-    activeNavLink = null; // Reset active navbar link
+    closeSidebar();
     return;
   }
 
@@ -81,13 +105,13 @@ function handleNavLinkClick(event) {
     activeNavLink.style.pointerEvents = "auto";
   }
 
-  target.style.backgroundColor = "#333";
+  target.style.color = "#38b9ff";
   target.style.pointerEvents = "none";
   activeNavLink = target;
 
   // Only show sidebar if it’s hidden
   if (sidebarContainer.style.right !== "0px") {
-    gsap.to(sidebarContainer, { right: 0, duration: 0.5 });
+    openSidebar();
   }
 
   renderSidebarContent(dataTarget);
@@ -126,13 +150,15 @@ function handleSidebarLinkClick(event) {
     activeSidebarLink.style.pointerEvents = "auto";
   }
 
-  target.style.backgroundColor = "#555";
+  target.style.color = "whitesmoke";
+  target.style.fontWeight = 700;
+
   target.style.pointerEvents = "none";
   activeSidebarLink = target;
 
   // Only show sub-sidebar if it’s hidden
   if (subSidebarContainer.style.right !== "60px") {
-    gsap.to(subSidebarContainer, { right: 1, duration: 0.5 });
+    openSubSidebar();
   }
 
   renderSubSidebarContent(parentNav, dataTarget);
@@ -152,44 +178,11 @@ function renderSubSidebarContent(parentNav, dataTarget) {
   subSidebarContent.innerHTML = `<ul>${subSidebarLinksHtml}</ul>`;
 }
 
-
-function handleCloseSidebarButtonClick() {
-  if (sidebarContainer.style.right === "0px") {
-    gsap.to(sidebarContainer, { right: -500, duration: 0.5 });
-    sidebarContent.innerHTML = ""; // Remove sidebar content
-    if (activeNavLink) {
-      activeNavLink.style.backgroundColor = "";
-      activeNavLink.style.pointerEvents = "auto";
-      activeNavLink = null;
-    }
-    
-    // Close sub-sidebar if it's open
-    if (subSidebarContainer.style.right === 1) {
-      gsap.to(subSidebarContainer, { right: -700, duration: 0.5 });
-      subSidebarContent.innerHTML = ""; // Remove sub-sidebar content
-      if (activeSidebarLink) {
-        activeSidebarLink.style.backgroundColor = "";
-        activeSidebarLink.style.pointerEvents = "auto";
-        activeSidebarLink = null;
-      }
-    }
-  }
-}
-
-function handleCloseSubSidebarButtonClick() {
-  if (subSidebarContainer.style.right === "60px") {
-    gsap.to(subSidebarContainer, { right: -700, duration: 0.5 });
-    subSidebarContent.innerHTML = ""; // Remove sub-sidebar content
-    if (activeSidebarLink) {
-      activeSidebarLink.style.backgroundColor = "";
-      activeSidebarLink.style.pointerEvents = "auto";
-      activeSidebarLink = null;
-    }
-  }
-}
-
-closeSidebarButton.addEventListener("click", handleCloseSidebarButtonClick);
-closeSubSidebarButton.addEventListener("click", handleCloseSubSidebarButtonClick);
+closeSidebarButton.addEventListener("click", closeSidebar);
+closeSubSidebarButton.addEventListener("click", () => {
+  console.log("Closing sub-sidebar");
+  closeSubSidebar();
+});
 
 navLinks.forEach(link => {
   const status = link.getAttribute("data-status");
@@ -197,8 +190,6 @@ navLinks.forEach(link => {
     link.addEventListener("click", handleNavLinkClick);
   }
 });
- 
-
 
 //end
 
