@@ -59,6 +59,10 @@
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+.nav-link.active {
+  color: #38b9ff;
+  pointer-events: none;
+}
 .nav-link:hover {
   text-decoration: underline; /* Underline on hover */
 }
@@ -201,6 +205,10 @@
 
 }
 
+#sidebar.open {
+  right: 0;
+}
+
 #close-sidebar {
   position: absolute;
   top: 5%;
@@ -242,13 +250,22 @@
  gap: 5px;
 }
 
+#sidebar ul li.active {
+  background: linear-gradient(to right, rgba(7, 131, 255, 0.548), rgba(0, 179, 255, 1.0));
+  padding-left: 15px;
+  color: white;
+}
 #sidebar ul li {
   padding: 3px;
   border-radius: 10px;
   transition: 0.2s;
 }
+
+#sidebar ul li.active:hover {
+  color: white;
+}
 #sidebar ul li:hover{
-  background: linear-gradient(to right, rgba(7, 131, 255, 0.548), rgba(0, 179, 255, 1.0));
+  background: white;
   padding-left:15px ;
   color: white;
  }
@@ -262,11 +279,17 @@
   width: 100%;
   height: 100%;
 }
+
+#sidebar-content ul a.active {
+  font-weight: 700;
+  color: black;
+}
+
+
 #sidebar-content ul a:hover{
   font-weight: 500;
   scale: 1.1;
-  color: white;
-}
+ }
 close-sidebar:hover{
     color: #005887;
 }
@@ -287,6 +310,10 @@ close-sidebar:hover{
   display: flex;
   flex-direction: column;
   justify-content: left;
+}
+
+#sub-sidebar.open {
+  right: 60px;
 }
 
 #close-sub-sidebar {
@@ -332,6 +359,11 @@ close-sidebar:hover{
 
   transition: 0.2s;
 }
+
+#sub-sidebar ul li.active {
+  background-color: #2d2d2d;
+  padding-left: 15px;
+}
 #sub-sidebar ul li:hover{
   background-color: #2d2d2d;
   padding-left:15px ;
@@ -345,6 +377,11 @@ close-sidebar:hover{
   transition: 0.2s;
   width: 100%;
   height: 100%;
+}
+
+#sub-sidebar-content ul a.active {
+  font-weight: 700;
+  color: white;
 }
 #sub-sidebar-content ul li a:hover{
   font-weight: 500;
