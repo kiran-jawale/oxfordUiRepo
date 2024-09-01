@@ -62,7 +62,7 @@ function closeSidebar() {
   sidebarContent.innerHTML = ""; // Remove sidebar content
   closeSubSidebar();
   if (activeNavLink) {
-    activeNavLink.style.backgroundColor = "";
+    activeNavLink.style.color = "white";
     activeNavLink.style.pointerEvents = "auto";
     activeNavLink = null;
   }
@@ -76,7 +76,7 @@ function closeSubSidebar() {
   gsap.to(subSidebarContainer, { right: -900, duration: 0.5 });
   subSidebarContent.innerHTML = ""; // Remove sub-sidebar content
   if (activeSidebarLink) {
-    activeSidebarLink.style.backgroundColor = "";
+    activeSidebarLink.style.fontWeight = "400";
     activeSidebarLink.style.pointerEvents = "auto";
     activeSidebarLink = null;
   }
@@ -146,7 +146,7 @@ function handleSidebarLinkClick(event) {
   if (status === "redirect") return;
 
   if (activeSidebarLink && activeSidebarLink !== target) {
-    activeSidebarLink.style.backgroundColor = "";
+    activeSidebarLink.style.fontWeight = "400";
     activeSidebarLink.style.pointerEvents = "auto";
   }
 
