@@ -7,26 +7,155 @@ const linksData = {
   "about": { sidebarLinks: [] },
   "channel-partners": {
     sidebarLinks: [
-      { title: "Consumer Products", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
-        { title: "Anchor", target: "#anchor" },
-        { title: "Finolex", target: "#finolex" },
-        { title: "Clair", target: "#clair" }
+      { title: "anchor", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
+        { title: "Roma", target: "#anchor" },
+        { title: "Roma Urban", target: "#finolex" },
+        { title: "Rider", target: "#clair" },
+        { title: "Penta Modular", target: "#clair" },
+        { title: "Ziva", target: "#clair" },
+        { title: "Penta PC", target: "#clair" },
+        { title: "Tiona", target: "#clair" },
+        { title: "swithgear", target: "#clair" },
+        { title: "Modular MCB", target: "#clair" },
+        { title: "Chageover", target: "#clair" },
+        { title: "Copa PRO(Multistrand Wire)", target: "#clair" },
+        { title: "modularBOX", target: "#clair" },
+        { title: "kit kat", target: "#clair" },
+        { title: "Smart retrofit Controller", target: "#clair" },
+        { title: "AC box", target: "#clair" },
+        { title: "Smart Anchor", target: "#clair" },
       ]},
-      { title: "Industrial Products", target: "#industrial-products", status: "subsidebar", subSidebarLinks: [
-        { title: "Manglam", target: "#manglam" },
-        { title: "Polycab", target: "#polycab" }
-      ]}
+      { title: "Finolex", target: "#Finolex", status: "subsidebar", subSidebarLinks: [
+        { title: "Multistrand Wire(FR, FRLS)", target: "#anchor" },
+        { title: "Multicore Wire", target: "#finolex" },
+        { title: "CO-Axial cable", target: "#clair" },
+        { title: "CO-Axial cable", target: "#clair" },
+        { title: "Communication cable", target: "#clair" },
+        { title: "lan cable", target: "#clair" },
+        { title: "CCTV CABLE", target: "#clair" },
+        { title: "speaker wire", target: "#clair" },
+        { title: "PCV Conduit + Accessories", target: "#clair" },
+        { title: "PVC Tape", target: "#clair" },
+        
+      ]},
+      { title: "Legero", target: "#Legero", status: "subsidebar", subSidebarLinks: [
+        { title: "LED Lighting Range", target: "#anchor" },
+        { title: "Customiesd Lighting", target: "#finolex" },
+        { title: "Clair", target: "#clair" },
+      ]},
+      { title: "Clair", target: "#Clair", status: "subsidebar", subSidebarLinks: [
+        { title: "LED Lighting Range", target: "#anchor" },
+        
+      ]},
+      { title: "Manglam", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
+        { title: "Cable Ties and Clipes", target: "#anchor" },
+       
+      ]},
+      { title: "Polycab", target: "#Polycab", status: "subsidebar", subSidebarLinks: [
+        { title: "Multistrand Wire", target: "#anchor" },
+        { title: "Armoured Cable", target: "#finolex" },
+        
+      ]},
+      { title: "Havelles", target: "#Havelles", status: "subsidebar", subSidebarLinks: [
+        { title: "Multistrand Wire", target: "#anchor" },
+        { title: "Swutchgear", target: "#finolex" },
+        { title: "armoured cable", target: "#finolex" },
+        { title: "Swutchgear Industrail", target: "#finolex" },
+        { title: "condensor", target: "#clair" },
+      ]},
+      { title: "RR Signature", target: "#RR Signature", status: "subsidebar", subSidebarLinks: [
+        { title: "ALL Type of fans", target: "#anchor" },
+        { title: "Ceiling Fan", target: "#finolex" },
+        { title: "pedestal fan", target: "#finolex" },
+        { title: "Faratta fan", target: "#finolex" },
+        { title: "Exhaust Fan", target: "#finolex" },
+        { title: "Table Fan", target: "#finolex" },
+        { title: "Ventiklation Fan", target: "#finolex" },
+       
+      ]},
+      { title: "Kinjal", target: "#Kinjal", status: "subsidebar", subSidebarLinks: [
+        { title: "Multistrand Wire", target: "#anchor" },
+        { title: "Switch", target: "#finolex" },
+        { title: "Sockets", target: "#clair" },
+        { title: "Accessories", target: "#clair" },
+        { title: "Switchgear", target: "#clair" },
+        { title: "PVC Tape", target: "#clair" },
+      ]},
+      { title: "Rg Lite", target: "#Rg Lite", status: "subsidebar", subSidebarLinks: [
+        { title: "Cobler", target: "#anchor" },
+        { title: "Sub Economy", target: "#anchor" },
+        { title: "Premium", target: "#anchor" },
+        { title: "Metal", target: "#anchor" },
+        { title: "Commercial", target: "#anchor" },
+        { title: "Fans", target: "#anchor" },
+        { title: "celing fan", target: "#anchor" },
+        { title: "Faratta fan", target: "#anchor" },
+        { title: "All purpose fan", target: "#anchor" },
+        { title: "Ventilation fan", target: "#anchor" },
+        { title: "Exhaust Fan", target: "#anchor" },
+        { title: "Multistrand Wire", target: "#anchor" },
+        { title: "Aluminimum cable", target: "#anchor" },
+        { title: "submersible cable", target: "#anchor" },
+        { title: "Multicore Wire", target: "#anchor" },
+        { title: "Led Lighting Range", target: "#anchor" },
+        { title: "Switch + socket+ accessories ", target: "#anchor" },
+        { title: "PVC Tape", target: "#anchor" },
+        { title: "Cooler Pump", target: "#anchor" },
+        { title: "Flexible pipe", target: "#anchor" },
+        { title: "Modular Box", target: "#anchor" },
+        { title: "RG Gold wire", target: "#finolex" },
+        { title: "Home Appliances", target: "#finolex" },
+        { title: "Eletric iron", target: "#finolex" },
+        { title: "Mixer Grinder", target: "#finolex" },
+        { title: "Infrared Cooktop", target: "#finolex" },
+      
+      ]},
+     
     ]
   },
   "products": {
     sidebarLinks: [
-      { title: "Product A", target: "#product-a", status: "subsidebar", subSidebarLinks: [
-        { title: "Details A1", target: "#details-a1" },
-        { title: "Details A2", target: "#details-a2" }
+      { title: "Switch,Socket + Accessories", target: "#Switch,Socket + Accessories", status: "subsidebar", subSidebarLinks: [
+        { title: "Anchor", target: "#details-a1" },
+        { title: "RG Lite", target: "#details-a2" },
+        { title: "Kinjal", target: "#details-a2" },
       ]},
-      { title: "Product B", target: "#product-b", status: "subsidebar", subSidebarLinks: [
-        { title: "Details B1", target: "#details-b1" },
-        { title: "Details B2", target: "#details-b2" }
+      { title: "Multistrand Wire", target: "#Multistrand Wire", status: "subsidebar", subSidebarLinks: [
+        { title: "anchor", target: "#details-a1" },
+        { title: "finoliex", target: "#details-a1" },
+        { title: "Polycab", target: "#details-a1" },
+        { title: "Havelles", target: "#details-a1" },
+        { title: "RG lite", target: "#details-a2" },
+        { title: "Kinjal", target: "#details-a2" },
+      ]},
+      { title: "Switch gear", target: "#Switch gear", status: "subsidebar", subSidebarLinks: [
+        { title: "Anchor", target: "#details-a1" },
+        { title: "Finolex", target: "#details-a2" },
+        { title: "Kinjal", target: "#details-a2" },
+        { title: "Havelles", target: "#details-a2" },
+       
+      ]},
+      { title: "Led Lighting Range", target: "#Led Lighting Range", status: "subsidebar", subSidebarLinks: [
+        { title: "Legro", target: "#details-a1" },
+        { title: "Clair", target: "#details-a2" }
+        { title: "RG lite", target: "#details-a2" }
+      ]},
+      { title: "Modular Box", target: "#Modular Box", status: "subsidebar", subSidebarLinks: [
+        { title: "Anchor", target: "#details-a1" },
+        { title: "Finolex", target: "#details-a2" },
+        { title: "RG Lite", target: "#details-a2" },
+      ]},
+      { title: "Armoured Cable", target: "#Armoured Cable", status: "subsidebar", subSidebarLinks: [
+        { title: "Polycab", target: "#details-a1" },
+        { title: "Havelles", target: "#details-a2" },
+      ]},
+      { title: "Fans", target: "#Fans", status: "subsidebar", subSidebarLinks: [
+        { title: "RG lite", target: "#details-a1" },
+        { title: "RR Signature", target: "#details-a2" },
+      ]},
+      { title: "PVC Pipe", target: "#PVC Pipe", status: "subsidebar", subSidebarLinks: [
+        { title: "Finolex", target: "#details-b1" },
+       
       ]}
     ]
   },
