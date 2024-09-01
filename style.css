@@ -202,7 +202,7 @@
   justify-content: left;
   font-weight: 600;
   box-shadow: 0 0 4px black;
-
+  transition: 0.3s;
 }
 
 #sidebar.open {
@@ -310,10 +310,11 @@ close-sidebar:hover{
   display: flex;
   flex-direction: column;
   justify-content: left;
+  transition: 0.3s;
 }
 
 #sub-sidebar.open {
-  right: 60px;
+  right: 0;
 }
 
 #close-sub-sidebar {
