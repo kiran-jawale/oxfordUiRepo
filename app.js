@@ -101,7 +101,7 @@ function handleNavLinkClick(event) {
 
   // Close sidebar if it's already open and another link is clicked
   if (activeNavLink && activeNavLink !== target) {
-    activeNavLink.style.backgroundColor = "";
+    activeNavLink.style.color = "white";
     activeNavLink.style.pointerEvents = "auto";
   }
 

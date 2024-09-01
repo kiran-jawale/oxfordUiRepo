@@ -182,13 +182,13 @@
  /* navside bar*/
 /* Sidebar */
 #sidebar {
-  height: 87vh;
+  height: 97vh;
   width: 25%;
   position: fixed;
-  top: 10vh;
+  top: 1vh;
   backdrop-filter: blur(6px);
-  background: linear-gradient(to bottom, rgba(0, 28, 43, 0.9), rgba(0, 96, 165, 0.9));
-  z-index: 101;
+  background: linear-gradient(to bottom, rgba(72, 148, 189, 0.9), rgba(23, 158, 255, 0.9));
+  z-index: 251;
   overflow-x: hidden;
   color: whitesmoke;
   right: -200%;
@@ -201,7 +201,7 @@
 #close-sidebar {
   position: absolute;
   top: 5%;
-  left: 75%;
+  left: 85%;
   width: 23px;
   height: 23px;
   z-index: 111;
@@ -267,15 +267,15 @@ close-sidebar:hover{
 
 /* Sub-sidebar */
 #sub-sidebar {
-  height: 87vh;
+  height: 97vh;
   width: 50%;
   position: fixed;
-  top: 10vh;
+  top: 1vh;
   backdrop-filter: blur(6px);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 96, 165, 0.9));
-  z-index: 91;
+  background: linear-gradient(to bottom, rgba(142, 204, 237, 0.9), rgba(71, 179, 255, 0.9));
+  z-index: 231;
   overflow-x: hidden;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   right: -300%;
   border-radius: 10px;
   display: flex;
@@ -286,12 +286,11 @@ close-sidebar:hover{
 #close-sub-sidebar {
   position: absolute;
   top: 5%;
-  left: 35%;
+  left: 40%;
   width: 23px;
   height: 23px;
   z-index: 101;
-  color: whitesmoke;
-  border-radius: 50%;
+   border-radius: 50%;
   padding: 5px;
   font-weight: 600;
   font-size: 1.5rem;
@@ -328,24 +327,23 @@ close-sidebar:hover{
   transition: 0.2s;
 }
 #sub-sidebar ul li:hover{
-  background-color: #0091df;
+  background-color: #ffffff;
   padding-left:15px ;
-
- }
+  }
 
 #sub-sidebar-content ul a {
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   font-size: medium;
   font-weight: 400;
   transition: 0.2s;
   width: 100%;
   height: 100%;
 }
-#sidebar-content ul a:hover{
+#sub-sidebar-content ul li a:hover{
   font-weight: 500;
   scale: 1.1;
-}
+ }
 close-sidebar:hover{
     color: #008dda;
 }
