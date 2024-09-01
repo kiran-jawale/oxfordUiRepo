@@ -2,8 +2,46 @@
 
 
 
+
 const linksData = {
-  // ... (rest of the data remains the same)
+  "about": { sidebarLinks: [] },
+  "channel-partners": {
+    sidebarLinks: [
+      { title: "Consumer Products", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
+        { title: "Anchor", target: "#anchor" },
+        { title: "Finolex", target: "#finolex" },
+        { title: "Clair", target: "#clair" }
+      ]},
+      { title: "Industrial Products", target: "#industrial-products", status: "subsidebar", subSidebarLinks: [
+        { title: "Manglam", target: "#manglam" },
+        { title: "Polycab", target: "#polycab" }
+      ]}
+    ]
+  },
+  "products": {
+    sidebarLinks: [
+      { title: "Product A", target: "#product-a", status: "subsidebar", subSidebarLinks: [
+        { title: "Details A1", target: "#details-a1" },
+        { title: "Details A2", target: "#details-a2" }
+      ]},
+      { title: "Product B", target: "#product-b", status: "subsidebar", subSidebarLinks: [
+        { title: "Details B1", target: "#details-b1" },
+        { title: "Details B2", target: "#details-b2" }
+      ]}
+    ]
+  },
+  "contact": {
+    sidebarLinks: [
+      { title: "Office Locations", target: "#office-locations", status: "subsidebar", subSidebarLinks: [
+        { title: "Headquarters", target: "#headquarters" },
+        { title: "Branch Office", target: "#branch-office" }
+      ]},
+      { title: "Customer Support", target: "#customer-support", status: "subsidebar", subSidebarLinks: [
+        { title: "Email Support", target: "#email-support" },
+        { title: "Phone Support", target: "#phone-support" }
+      ]}
+    ]
+  }
 };
 
 const closeSidebarButton = document.querySelector("#close-sidebar");
