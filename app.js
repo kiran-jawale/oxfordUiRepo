@@ -8,7 +8,7 @@ const linksData = {
   "channel-partners": {
     sidebarLinks: [
       { title: "anchor", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
-        { title: "Roma", target: "#anchor" },
+        { title: "Roma", target: "/about.html#" },
         { title: "Roma Urban", target: "#finolex" },
         { title: "Rider", target: "#clair" },
         { title: "Penta Modular", target: "#clair" },
