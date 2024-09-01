@@ -147,10 +147,11 @@ function handleSidebarLinkClick(event) {
 
   if (activeSidebarLink && activeSidebarLink !== target) {
     activeSidebarLink.style.fontWeight = "400";
+    activeSidebarLink.style.color = "black";
     activeSidebarLink.style.pointerEvents = "auto";
   }
 
-  target.style.color = "whitesmoke";
+  target.style.color = "black";
   target.style.fontWeight = 700;
 
   target.style.pointerEvents = "none";

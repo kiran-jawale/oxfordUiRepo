@@ -183,19 +183,22 @@
 /* Sidebar */
 #sidebar {
   height: 97vh;
-  width: 25%;
+  width: 20%;
   position: fixed;
   top: 1vh;
   backdrop-filter: blur(6px);
-  background: linear-gradient(to bottom, rgba(72, 148, 189, 0.9), rgba(23, 158, 255, 0.9));
+  background: linear-gradient(to bottom, rgba(238, 249, 255, 0.9), rgba(160, 213, 250, 0.9));
   z-index: 251;
   overflow-x: hidden;
-  color: whitesmoke;
+  color: black;
   right: -200%;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  font-weight: 600;
+  box-shadow: 0 0 4px black;
+
 }
 
 #close-sidebar {
@@ -205,7 +208,7 @@
   width: 23px;
   height: 23px;
   z-index: 111;
-  color: whitesmoke;
+  color: black;
   border-radius: 50%;
   padding: 5px;
   font-weight: 600;
@@ -221,12 +224,14 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  color: black;
 }
 #sidebar h3{
   width: 50%;
   font-weight: 600;
   text-align: left;
   padding-left: 25px;
+  color: black;
 }
 #sidebar ul{
   list-style: none;
@@ -238,19 +243,19 @@
 }
 
 #sidebar ul li {
-  padding: 6px;
+  padding: 3px;
   border-radius: 10px;
   transition: 0.2s;
 }
 #sidebar ul li:hover{
-  background: linear-gradient(to right, rgba(7, 131, 255, 0.548), rgba(0, 179, 255, 0.9));
+  background: linear-gradient(to right, rgba(7, 131, 255, 0.548), rgba(0, 179, 255, 1.0));
   padding-left:15px ;
-
+  color: white;
  }
 
 #sidebar-content ul a {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   font-size: medium;
   font-weight: 400;
   transition: 0.2s;
@@ -260,9 +265,10 @@
 #sidebar-content ul a:hover{
   font-weight: 500;
   scale: 1.1;
+  color: white;
 }
 close-sidebar:hover{
-    color: #008dda;
+    color: #005887;
 }
 
 /* Sub-sidebar */
@@ -272,10 +278,10 @@ close-sidebar:hover{
   position: fixed;
   top: 1vh;
   backdrop-filter: blur(6px);
-  background: linear-gradient(to bottom, rgba(142, 204, 237, 0.9), rgba(71, 179, 255, 0.9));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(25, 25, 25, 0.9));
   z-index: 231;
   overflow-x: hidden;
-  color: rgb(0, 0, 0);
+  color: white;
   right: -300%;
   border-radius: 10px;
   display: flex;
@@ -327,13 +333,13 @@ close-sidebar:hover{
   transition: 0.2s;
 }
 #sub-sidebar ul li:hover{
-  background-color: #ffffff;
+  background-color: #2d2d2d;
   padding-left:15px ;
   }
 
 #sub-sidebar-content ul a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: medium;
   font-weight: 400;
   transition: 0.2s;
@@ -342,7 +348,8 @@ close-sidebar:hover{
 }
 #sub-sidebar-content ul li a:hover{
   font-weight: 500;
-  scale: 1.1;
+  scale: 1.2;
+
  }
 close-sidebar:hover{
     color: #008dda;
