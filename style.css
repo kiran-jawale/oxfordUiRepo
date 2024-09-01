@@ -292,7 +292,7 @@ close-sidebar:hover{
 #close-sub-sidebar {
   position: absolute;
   top: 5%;
-  left: 40%;
+  left: 50%;
   width: 23px;
   height: 23px;
   z-index: 101;
@@ -305,7 +305,7 @@ close-sidebar:hover{
 }
 
 #sub-sidebar-content {
-  width: 40%;
+  width: 50%;
   padding: 20px;
   display: flex;
   flex-direction: column;
