@@ -60,13 +60,16 @@
 }
 
 .nav-link.active {
-  color: #38b9ff;
-  pointer-events: none;
+   pointer-events: none;
 }
 .nav-link:hover {
   text-decoration: underline; /* Underline on hover */
 }
+#navMenu a.active::after {
+  width: 100%;
+}
 
+ 
 .nav-menu {
   display: flex;
   align-items: center; /* Align links with logo */
