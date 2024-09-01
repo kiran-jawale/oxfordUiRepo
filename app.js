@@ -137,7 +137,7 @@ const linksData = {
       ]},
       { title: "Led Lighting Range", target: "#Led Lighting Range", status: "subsidebar", subSidebarLinks: [
         { title: "Legro", target: "#details-a1" },
-        { title: "Clair", target: "#details-a2" }
+        { title: "Clair", target: "#details-a2" },
         { title: "RG lite", target: "#details-a2" }
       ]},
       { title: "Modular Box", target: "#Modular Box", status: "subsidebar", subSidebarLinks: [
