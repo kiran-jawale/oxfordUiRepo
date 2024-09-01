@@ -173,6 +173,18 @@ const linksData = {
   }
 };
 
+const navToggle = document.querySelector(".nav-toggle");
+const mobileMenuContainer = document.getElementById("mobile-menu-container");
+const closeMobileMenuButton = document.getElementById("close-mobile-menu");
+
+navToggle.addEventListener("click", () => {
+  mobileMenuContainer.style.top = "10px";
+});
+
+closeMobileMenuButton.addEventListener("click", () => {
+  mobileMenuContainer.style.top = "-800px";
+});
+
 const closeSidebarButton = document.querySelector("#close-sidebar");
 const closeSubSidebarButton = document.querySelector("#close-sub-sidebar");
 const sidebarContainer = document.querySelector("#sidebar");
@@ -309,6 +321,8 @@ navLinks.forEach(link => {
     link.addEventListener("click", handleNavLinkClick);
   }
 });
+
+
 //end
 
 //3d squares//
