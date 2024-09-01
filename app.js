@@ -352,6 +352,15 @@ const plugins = [EmblaCarouselAutoplay()];
 const emblaApi = EmblaCarousel(emblaNode, options, plugins);
 //banners end
 
+//
+
+// 3d image slider left to right banners for small screens
+const emblaNodeSmall = document.querySelector(".embla-small");
+const optionsSmall = { loop: false };
+const pluginsSmall = [EmblaCarouselAutoplay()];
+const emblaApiSmall = EmblaCarousel(emblaNodeSmall, optionsSmall, pluginsSmall);
+//
+
 // 3d image slider up to down //
 // ...
 
@@ -501,4 +510,33 @@ metricsStatNumbers.forEach((statNumber) => {
       },
     }
   );
+});
+
+
+//
+
+const socialLinks = document.querySelectorAll('.social-link');
+
+socialLinks.forEach((link) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: link,
+      start: 'top 90%',
+      end: 'top 70%',
+      toggleActions: 'play none none reset',
+       scrub:1,
+    },
+  });
+
+  tl.to(link, {
+    duration: 0.15,
+    backgroundColor: 'var(--accent-color)',
+    color: 'white',
+  });
+
+  tl.to(link.querySelector('i'), {
+    duration: 0.15,
+    color: 'white',
+  }, 0);
+  tl.reverse()
 });
