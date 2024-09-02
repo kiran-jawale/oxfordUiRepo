@@ -528,29 +528,4 @@ metricsStatNumbers.forEach((statNumber) => {
 
 
 //
-
-const socialLinks = document.querySelectorAll('.social-link');
-
-socialLinks.forEach((link) => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: link,
-      start: 'top 90%',
-      end: 'top 70%',
-      toggleActions: 'play none none reset',
-       scrub:1,
-    },
-  });
-
-  tl.to(link, {
-    duration: 0.15,
-    backgroundColor: 'var(--accent-color)',
-    color: 'white',
-  });
-
-  tl.to(link.querySelector('i'), {
-    duration: 0.15,
-    color: 'white',
-  }, 0);
-  tl.reverse()
-});
+ 
