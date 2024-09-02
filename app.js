@@ -8,7 +8,7 @@ const linksData = {
   "channel-partners": {
     sidebarLinks: [
       { title: "anchor", target: "#consumer-products", status: "subsidebar", subSidebarLinks: [
-        { title: "Roma", target: "/anchor.html" },
+        { title: "Roma", target: "./anchor.html" },
         { title: "Roma Urban", target: "/anchor.html" },
         { title: "Rider", target: "/about.html" },
         { title: "Penta Modular", target: "/anchor.html" },
@@ -175,14 +175,18 @@ const linksData = {
 
 const navToggle = document.querySelector(".nav-toggle");
 const mobileMenuContainer = document.getElementById("mobile-menu-container");
-const closeMobileMenuButton = document.getElementById("close-mobile-menu");
+const closeMobileMenuButton = document.getElementById("close-mobile-header");
 
 navToggle.addEventListener("click", () => {
-  mobileMenuContainer.style.top = "10px";
+  mobileMenuContainer.style.top = "7vh";
+  navToggle.style.display = 'none';
+  closeMobileMenuButton.style.display = 'block';
 });
 
 closeMobileMenuButton.addEventListener("click", () => {
   mobileMenuContainer.style.top = "-800px";
+  closeMobileMenuButton.style.display = 'none';
+  navToggle.style.display = 'block';
 });
 
 const closeSidebarButton = document.querySelector("#close-sidebar");
