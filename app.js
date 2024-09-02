@@ -187,6 +187,7 @@ closeMobileMenuButton.addEventListener("click", () => {
   mobileMenuContainer.style.top = "-800px";
   closeMobileMenuButton.style.display = 'none';
   navToggle.style.display = 'block';
+  closeSidebar();
 });
 
 const closeSidebarButton = document.querySelector("#close-sidebar");

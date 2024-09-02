@@ -139,8 +139,7 @@
 
 .nav-toggle {
   display: none;
-  flex-direction: column;
-  cursor: pointer;
+  
 }
 
 .nav-toggle div {
@@ -190,12 +189,7 @@
 
 #close-mobile-header{
    display: none;
-  width: 23px;
-  height: 23px;
-  color: white;
-  font-size: 1.4rem;
-  font-weight: bolder;
-   text-align: center;
+
    transition: 0.3s;
 }
 
@@ -262,7 +256,7 @@
    width: 70%;
    margin-left: 4px;
    font-weight: 500;
-}
+ }
 
 #mobile-menu .nav-link:hover {
   text-decoration: underline;
@@ -315,14 +309,14 @@
   left: 80%;
   width: 23px;
   height: 23px;
-  z-index: 111;
+  z-index: 311;
   color: black;
   border-radius: 50%;
   padding: 5px;
   font-weight: 600;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 #sidebar-content {
@@ -396,6 +390,80 @@ close-sidebar:hover{
     color: #005887;
 }
 
+@media screen and (max-width: 600px) {
+  #sidebar.open {
+    right: 5vw;
+    transition: 0.3s;
+  }
+  #sidebar{
+    height: 53vh;
+    top:45vh;
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+#sidebar-content ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size:larger;
+  font-weight: 400;
+  transition: 0.2s;
+  width: 100%;
+  height: 100%;
+}
+#sub-sidebar.open {
+  right: 5vw;
+  transition: 0.3s;
+  width: 100%;
+  height: 90%;
+  top:8vh;
+}
+#sub-sidebar-content ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  transition: 0.2s;
+  width: 100%;
+  height: 100%;
+}
+#sub-sidebar-content ul{
+  font-size: 20px;
+  font-weight: 500;
+}
+#close-sub-sidebar{
+  left:50%;
+}
+#rightbtn{
+  display: none;
+}
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 0px;
+  max-width: 100vw;
+}
+.nav-toggle{
+  flex-direction: column;
+  cursor: pointer;
+  width: 15%;
+  row-gap: 0.5px;
+}
+#close-mobile-header{
+  width: 23px;
+  height: 23px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+   text-align: center;
+   width: 15%;
+   margin-right: 5%;
+}
+}
+
 /* Sub-sidebar */
 #sub-sidebar {
   height: 88.5vh;
@@ -404,7 +472,7 @@ close-sidebar:hover{
   top: 10vh;
   backdrop-filter: blur(6px);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(25, 25, 25, 0.9));
-  z-index: 231;
+  z-index: 331;
   overflow-x: hidden;
   color: white;
   right: -300%;
@@ -426,7 +494,7 @@ close-sidebar:hover{
   left: 48%;
   width: 23px;
   height: 23px;
-  z-index: 101;
+  z-index: 401;
    border-radius: 50%;
   padding: 5px;
   font-weight: 600;
