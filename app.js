@@ -63,7 +63,7 @@ const linksData = {
         { title: "Swutchgear Industrail", target: "/havelles.html" },
         { title: "condensor", target: "/havelles.html" },
       ]},
-      { title: "RR Signature", target: "/rrsignaature.html, status: "subsidebar", subSidebarLinks: [
+      { title: "RR Signature", target: "/rrsignaature.html", status: "subsidebar", subSidebarLinks: [
         { title: "ALL Type of fans", target: "/rrsignaature.html" },
         { title: "Ceiling Fan", target: "/rrsignaature.html" },
         { title: "pedestal fan", target: "/rrsignaature.html" },
