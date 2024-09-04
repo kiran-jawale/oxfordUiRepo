@@ -475,10 +475,11 @@ tlSmall.from(
 // Company numbers End //
 // testmonial//
 
+
 $(".testimonials-container").owlCarousel({
   loop: true,
   autoplay: true,
-  autoplayTimeout: 6000,
+  autoplayTimeout: 3000,
   margin: 10,
   nav: true,
   navText: [
