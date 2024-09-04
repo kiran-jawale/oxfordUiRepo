@@ -76,7 +76,7 @@
   align-items: center; /* Align links with logo */
   justify-content: center;
   width: 80%;
-  gap: 40px;
+  gap: 10px;
   padding-left: 15%;
   padding-right: 15%;
   font-size: 1rem;
@@ -1269,6 +1269,7 @@ scale: 1.02
  .owl-nav button{
    border-radius: 50% !important;
  }
+
  .owl-nav .owl-prev i,
  .owl-nav .owl-next i{
 
