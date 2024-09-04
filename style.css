@@ -79,8 +79,7 @@
   gap: 40px;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 1rem;
-  font-weight: 500;
+   font-weight: 500;
 }
 
 #rightbtn{
@@ -108,11 +107,11 @@
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  border-radius: 4px;
-  letter-spacing: 0.1px;
+   letter-spacing: 0.1px;
   position: relative;
   padding: 0 10px;
   transition: 0.3s;
+  display: block;
   cursor: pointer;
 }
 
@@ -200,7 +199,7 @@
   left: 0;
   width: 100vw;
   z-index: 241;
-  height: 35vh;
+  height: 37vh;
   background-color: rgb(30, 30, 30);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -213,6 +212,7 @@
   padding-bottom: 5px;
   padding-top: 5px;
   align-content: center;
+  border-radius: 5px;
  }
 
 @media screen and (max-width: 768px) {
@@ -234,7 +234,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
-  height: 98%;
+  height: 97%;
   max-width: 98%;
   padding-left: 4px;
   padding-bottom: 4vh;
@@ -255,7 +255,7 @@
    border-radius: 5px;
    width: 70%;
    margin-left: 4px;
-   font-weight: 500;
+   font-weight: 400;
  }
 
 #mobile-menu .nav-link:hover {
@@ -418,6 +418,7 @@ close-sidebar:hover{
   width: 100%;
   height: 90%;
   top:8vh;
+  z-index: 331;
 }
 #sub-sidebar-content ul a {
   display: block;
@@ -472,7 +473,7 @@ close-sidebar:hover{
   top: 10vh;
   backdrop-filter: blur(6px);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(25, 25, 25, 0.9));
-  z-index: 331;
+  z-index: 131;
   overflow-x: hidden;
   color: white;
   right: -300%;
@@ -653,11 +654,12 @@ close-sidebar:hover{
 @media screen and (max-width: 600px) {
   #image-container {
     display: none; /* hide on small screens */
+    position: relative;
   }
   #image-container-small {
     display: block; /* show on small screens */
     width: 100%;
-    height: 25vh;
+    height: 27vh;
   }
   .embla-small {
     overflow: hidden;
@@ -677,6 +679,7 @@ close-sidebar:hover{
     background-color: rgb(0, 0, 0);
   }
   .embla__slide-small {
+    position: relative; /* Make the slide a relative container */
     padding-left: 4px;
     min-width: 100%;
     max-height: 100%;
@@ -686,7 +689,52 @@ close-sidebar:hover{
   .embla__slide-small img {
     width: 98%;
     height: 100%;
-    margin-left: 4px;
+    margin-left: 2px;
+    object-fit: cover;
+  
+  }.slide-text {
+    position: absolute; /* Position text absolutely */
+    top: 10px; /* Move text 10px from the top edge */
+    left: 20px; /* Move text 10px from the left edge */
+    transform: none; /* Remove the centering transform */
+    text-align: left; /* Align text to the left */
+    color: white;
+    z-index: 1; /* Ensure text is on top of the image */
+    width: 90%;
+    height: 60%;
+    padding: 2px;
+   }
+  
+  .slide-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5px;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  .slide-text p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 300;
+  }
+  .embla__buttons-small {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding: 0 10px;
+    z-index: 2; /* Ensure buttons are above the slides */
+  }
+
+  .embla__button-small {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
   }
 }
 
