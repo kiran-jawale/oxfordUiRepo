@@ -694,6 +694,7 @@ close-sidebar:hover {
     display: block; /* show on small screens */
     width: 100%;
     height: auto;
+    gap:8px;
   }
   .embla-small {
     overflow: hidden;
@@ -710,16 +711,15 @@ close-sidebar:hover {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #00182c;
   }
   .embla__slide-small {
     position: relative; /* Make the slide a relative container */
-    padding-left: 4px;
-    min-width: 100%;
+     min-width: 100%;
     max-height: 100%;
     overflow: hidden;
-    background: #000;
-  }
+    background-color: #00182c;
+   }
   .embla__slide-small img {
     width: 98%;
     height: 100%;
