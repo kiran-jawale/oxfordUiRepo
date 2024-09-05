@@ -879,6 +879,47 @@ close-sidebar:hover {
   }
 }
 
+
+.cmd {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.cmd2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cmd:hover .image {
+  opacity: 0.3;
+}
+
+.cmd:hover .cmd2 {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 /* 3d image left to right End*/
 /* 3d image up to down*/
 
@@ -1671,7 +1712,7 @@ footer {
       transform 0.3s,
       opacity 0.3s;
   }
-
+ 
   .social-links a::after {
     /* existing styles */
     transform: translateY(0) rotate(25deg);
